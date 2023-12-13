@@ -1,0 +1,26 @@
+
+<div>
+  <ul class="list-group">
+    <li *ngFor="let Empleado of Tabla;
+        let i=index"
+        class="list-group-item d-flex align-items-center justify-content-between bg- border-danger">
+      <div>
+        <span class="text-danger">
+          {{i+1+")"}}
+        </span>
+        <span>
+          Nombre: {{Empleado.Nombre}}
+        </span>
+        <br>
+        <span class="p-3">
+          Id: {{Empleado.Id}}
+        </span>
+        <br>
+        <span class="p-3">
+          Años en la empresa: {{Empleado.Tiempo}}
+        </span>
+      </div>
+      <button class="btn btn-danger" (click)="Enviar_Id(Empleado.Id, Empleado.Nombre)">X</button>
+    </li>
+  </ul>
+</div>

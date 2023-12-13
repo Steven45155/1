@@ -1,0 +1,17 @@
+
+<form (submit)="Crear_Empleado()" class=" border border-solid border-danger border-2 rounded-3">
+  <h4 class="text-center">Crear empleado</h4>
+    <div class="row m-3">
+    <input
+    type="text" placeholder="Nombre"
+    class="mt-3 form-control"
+    [(ngModel)]="crear.Nombre" name="Nom">
+    <input
+    type="number"
+    placeholder="Año de ingreso"
+    class="mt-4 mb-4 form-control"
+    [(ngModel)]="crear.Tiempo"
+    name="Tiem">
+    <button>Crear</button>
+  </div>
+</form>
